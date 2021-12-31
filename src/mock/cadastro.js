@@ -4,7 +4,7 @@ const cadastro = {
   name: 'Hugo',
   lastName: 'Pereira',
   eMail: 'dogue100@gmail.com',
-  phone: '11971812961',
+  phone: '(11)97181-4587',
   country: 'BRA',
   description: 'Description',
   mentor: true,
