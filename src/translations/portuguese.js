@@ -6,6 +6,7 @@ const portuguese = {
   currency: 'R$',
   nav: {
     calendar: 'Calendário de aulas',
+    searchMentor: 'Procurar Mentores',
     completeCalendar: 'Calendário completo',
     registry: 'Cadastro',
     payments: 'Pagamentos',
@@ -45,6 +46,11 @@ const portuguese = {
     tasks: 'tarefas',
     settings: 'configurações',
     payments: 'pagamentos',
+  },
+  searchPage: {
+    book: 'Agendar aula',
+    price: 'preço aula',
+    description: 'descrição',
   },
 }
 

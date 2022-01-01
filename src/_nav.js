@@ -56,16 +56,16 @@ const _nav = [
     items: [],
   },
   {
-    component: CNavGroup,
-    name: portuguese.nav.calendar,
+    component: CNavItem,
+    name: portuguese.nav.completeCalendar,
     icon: <CIcon icon={cilCalendar} customClassName="nav-icon" />,
-    items: [
-      {
-        component: CNavItem,
-        name: portuguese.nav.completeCalendar,
-        to: '/forms/range',
-      },
-    ],
+    to: '/forms/range',
+  },
+  {
+    component: CNavItem,
+    name: portuguese.nav.searchMentor,
+    icon: <CIcon icon={cilCalendar} customClassName="nav-icon" />,
+    to: '/forms/validation',
   },
 ]
 
