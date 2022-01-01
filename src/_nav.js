@@ -13,6 +13,7 @@ import {
   cilSpeedometer,
   cilStar,
   cilCreditCard,
+  cilCalendar,
 } from '@coreui/icons'
 import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
 
@@ -53,6 +54,18 @@ const _nav = [
     name: portuguese.nav.payments,
     icon: <CIcon icon={cilCreditCard} customClassName="nav-icon" />,
     items: [],
+  },
+  {
+    component: CNavGroup,
+    name: portuguese.nav.calendar,
+    icon: <CIcon icon={cilCalendar} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: portuguese.nav.completeCalendar,
+        to: '/forms/range',
+      },
+    ],
   },
 ]
 

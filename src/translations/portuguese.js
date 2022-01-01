@@ -5,6 +5,8 @@ const portuguese = {
   },
   currency: 'R$',
   nav: {
+    calendar: 'Calendário de aulas',
+    completeCalendar: 'Calendário completo',
     registry: 'Cadastro',
     payments: 'Pagamentos',
     home: 'Principal',
