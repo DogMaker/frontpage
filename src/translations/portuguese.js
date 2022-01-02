@@ -52,6 +52,14 @@ const portuguese = {
     price: 'preço aula',
     description: 'descrição',
   },
+  personalPage: {
+    class: 'Preços aulas',
+    packages: 'Pacotes de aulas',
+    priceForUnity: 'Preço aula:',
+    callendar: 'Calendário',
+    reviews: 'Avaliações',
+    checkAvailability: 'Verificar disponibilidade',
+  },
 }
 
 export default portuguese

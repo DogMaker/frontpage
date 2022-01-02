@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { Component, useState } from 'react'
 import {
   cibCcAmex,
   cibCcApplePay,
@@ -51,6 +51,17 @@ import {
   CTableBody,
   CTableDataCell,
   CProgress,
+  CDropdownDivider,
+  CDropdownItem,
+  CDropdownMenu,
+  CDropdownToggle,
+  CDropdown,
+  CNavbarNav,
+  CCollapse,
+  CNavbarToggler,
+  CNavbarBrand,
+  CContainer,
+  CNavbar,
 } from '@coreui/react'
 import { DocsCallout, DocsExample } from 'src/components'
 import portuguese from '../../../translations/portuguese.js'
@@ -59,21 +70,39 @@ import search from '../../../mock/search.js'
 import avatar2 from 'src/assets/images/avatars/1.jpg'
 import skills from '../../../mock/skills.js'
 import Rating from '@material-ui/lab/Rating'
+import Select from 'react-select'
+import makeAnimated from 'react-select/animated'
+
+const options = [
+  { value: 'Java', label: 'Java' },
+  { value: 'Php', label: 'Php' },
+  { value: 'Javascript', label: 'Javascript' },
+]
+const animatedComponents = makeAnimated()
 
 const Validation = () => {
   const [visible, setVisible] = useState(false)
 
   return (
     <>
+      <Select
+        closeMenuOnSelect={false}
+        components={animatedComponents}
+        defaultValue={[options[1], options[2]]}
+        isMulti
+        options={options}
+      />
+      <br />
       <CRow>
         <CCol xs>
           {search.map((item, index) => (
             <CCard className="mb-4" v-for="item in tableItems" key={index}>
-              <div className="fs-3 fw-semibold">
-                <CAvatar size="xl" src={avatar2} status="success" />
-                {item.completeName}
-              </div>
               <CCardBody>
+                <div className="fs-3 fw-semibold">
+                  <CAvatar size="xl" src={avatar2} status="success" />
+                  {item.completeName}
+                </div>
+                <br />
                 <CRow>
                   <div className="small text-medium-emphasis">
                     <Rating name="size-medium" defaultValue={item.rattings} />
@@ -145,7 +174,7 @@ const Validation = () => {
                   </CCol>
                 </CRow>
               </CCardBody>
-              <a href="#" className="btn btn-dark">
+              <a href="#/forms/layout" className="btn btn-dark">
                 <strong>{portuguese.searchPage.book}</strong>
               </a>
             </CCard>
