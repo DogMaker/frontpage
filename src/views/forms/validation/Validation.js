@@ -1,5 +1,28 @@
 import React, { useState } from 'react'
 import {
+  cibCcAmex,
+  cibCcApplePay,
+  cibCcMastercard,
+  cibCcPaypal,
+  cibCcStripe,
+  cibCcVisa,
+  cibGoogle,
+  cibFacebook,
+  cibLinkedin,
+  cifBr,
+  cifEs,
+  cifFr,
+  cifIn,
+  cifPl,
+  cifUs,
+  cibTwitter,
+  cilCloudDownload,
+  cilPeople,
+  cilUser,
+  cilUserFemale,
+} from '@coreui/icons'
+import CIcon from '@coreui/icons-react'
+import {
   CCard,
   CCardBody,
   CCardHeader,
@@ -54,6 +77,16 @@ const Validation = () => {
                 <CRow>
                   <div className="small text-medium-emphasis">
                     <Rating name="size-medium" defaultValue={item.rattings} />
+                    <div className="fs-5 fw-semibold">
+                      {portuguese.registrySkillPage.languages + ': '}
+                      <div className="display-inline-flags">
+                        {item.knowledge.languages.map((item, index) => (
+                          <div className="flags" v-for="item in tableItems" key={index}>
+                            <CIcon size="xl" icon={item.flag} />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
                   </div>
                   <CCol xs={12} md={6} xl={6}>
                     <CRow>

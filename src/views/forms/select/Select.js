@@ -42,15 +42,13 @@ const Select = () => {
                 </CTableHead>
                 <CTableBody>
                   <CTableRow>
-                    {skills.knowledge.languages.map((item, index) => (
-                      <CTableDataCell
-                        className="text-center"
-                        v-for="item in tableItems"
-                        key={index}
-                      >
-                        <CIcon size="xl" icon={item.flag} title={item.name} />
-                      </CTableDataCell>
-                    ))}
+                    <div className="display-inline-flags">
+                      {skills.knowledge.languages.map((item, index) => (
+                        <div className="flags" v-for="item in tableItems" key={index}>
+                          <CIcon size="xl" icon={item.flag} />
+                        </div>
+                      ))}
+                    </div>
                   </CTableRow>
                 </CTableBody>
               </CTable>

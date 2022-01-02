@@ -15,3 +15,12 @@ $enable-rtl: true;
 
 // If you want to add custom CSS you can put it here.
 @import "custom";
+
+.flags {
+  padding: 3px;
+  display:inline-block;
+}
+
+.display-inline-flags {
+  display:inline-block;
+}
