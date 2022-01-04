@@ -32,6 +32,8 @@ import search from '../../../mock/searchById.js'
 import portuguese from '../../../translations/portuguese.js'
 import avatar2 from 'src/assets/images/avatars/1.jpg'
 import Rating from '@material-ui/lab/Rating'
+import ApiMercadoPago from './apiMercadoPago.js'
+import preferences from './preferences.js'
 
 const Layout = () => {
   const [visible, setVisible] = useState(false)
@@ -91,10 +93,13 @@ const Layout = () => {
           <CCardBody>
             <div className="fs-3 fw-semibold">{portuguese.personalPage.class}</div>
             <br />
-            <button type="button" className="btn btn-light rounded-pill" disable>
-              {portuguese.personalPage.priceForUnity}{' '}
-              <strong>{portuguese.currency + search.prices.valuePerMentoring}</strong>
-            </button>
+            <div className="display-inline-flags">
+              <button type="button" className="btn btn-light rounded-pill" disable>
+                {portuguese.personalPage.priceForUnity}{' '}
+                <strong>{portuguese.currency + search.prices.valuePerMentoring}</strong>
+              </button>
+              <ApiMercadoPago />
+            </div>
           </CCardBody>
           <CCardBody>
             <div className="fs-4 fw-semibold">{portuguese.personalPage.packages}</div>
