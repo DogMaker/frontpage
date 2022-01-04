@@ -2,6 +2,7 @@ const portuguese = {
   generics: {
     save: 'salvar',
     close: 'fechar',
+    buy: 'Comprar',
   },
   currency: 'R$',
   nav: {

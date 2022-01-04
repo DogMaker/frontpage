@@ -15,6 +15,7 @@ import React, { useState } from 'react'
 import { useMercadopago } from 'react-sdk-mercadopago'
 import axios from 'axios'
 import preferences from './preferences.js'
+import portuguese from '../../../translations/portuguese.js'
 
 const ApiMercadoPago = () => {
   const [id, setId] = useState('')
@@ -46,7 +47,7 @@ const ApiMercadoPago = () => {
   return (
     <>
       <button type="button" className="btn btn-primary rounded-pill" onClick={sendPreferences}>
-        <strong>Comprar com Mercado Pago</strong>
+        <strong>{portuguese.generics.buy}</strong>
       </button>
     </>
   )
