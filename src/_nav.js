@@ -15,6 +15,7 @@ import {
   cilCreditCard,
   cilCalendar,
   cilSchool,
+  cilHome,
 } from '@coreui/icons'
 import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
 
@@ -22,6 +23,7 @@ const _nav = [
   {
     component: CNavItem,
     name: portuguese.nav.home,
+    icon: <CIcon icon={cilHome} customClassName="nav-icon" />,
     to: '/dashboard',
   },
   {
