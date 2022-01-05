@@ -124,7 +124,7 @@ const Validation = () => {
                           <div className="text-medium-emphasis small">
                             {portuguese.searchPage.description}
                           </div>
-                          <div className="fs-6 fw-semibold">{item.description}</div>
+                          <div className="text-medium-emphasis medium">{item.description}</div>
                         </div>
                       </CCol>
                       <CCol sm={4}>
