@@ -3,6 +3,7 @@ const portuguese = {
     save: 'salvar',
     close: 'fechar',
     buy: 'Comprar',
+    classes: 'Aulas',
   },
   currency: 'R$',
   nav: {

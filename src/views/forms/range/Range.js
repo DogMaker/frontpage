@@ -9,6 +9,7 @@ import { DataView } from 'primereact/dataview'
 import { Calendar } from '@fullcalendar/core'
 import { FullCalendar } from 'primereact/fullcalendar'
 import dayGridPlugin from '@fullcalendar/daygrid'
+import portuguese from '../../../translations/portuguese.js'
 
 const Range = () => {
   const fullCalendarOptions = {
@@ -105,7 +106,6 @@ const Range = () => {
             rows={10}
           />
         )}
-
         {display === 'calendar' && (
           <FullCalendar
             className="p-mx-3 p-mt-6 p-mb-3 p-mx-md-6"
