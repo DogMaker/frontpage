@@ -1,22 +1,7 @@
 import React from 'react'
 import CIcon from '@coreui/icons-react'
 import portuguese from './translations/portuguese.js'
-import {
-  cilBell,
-  cilCalculator,
-  cilChartPie,
-  cilCursor,
-  cilDrop,
-  cilNotes,
-  cilPencil,
-  cilPuzzle,
-  cilSpeedometer,
-  cilStar,
-  cilCreditCard,
-  cilCalendar,
-  cilSchool,
-  cilHome,
-} from '@coreui/icons'
+import { cilNotes, cilCreditCard, cilCalendar, cilSchool, cilHome } from '@coreui/icons'
 import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
 
 const _nav = [
@@ -28,7 +13,7 @@ const _nav = [
   },
   {
     component: CNavTitle,
-    name: 'Components',
+    name: 'Geral',
   },
   {
     component: CNavGroup,
