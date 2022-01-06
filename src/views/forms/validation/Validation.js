@@ -63,7 +63,6 @@ import {
   CContainer,
   CNavbar,
 } from '@coreui/react'
-import { DocsCallout, DocsExample } from 'src/components'
 import portuguese from '../../../translations/portuguese.js'
 import pacotes from '../../../mock/pacotes.js'
 import search from '../../../mock/search.js'
