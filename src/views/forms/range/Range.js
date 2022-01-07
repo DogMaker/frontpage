@@ -32,17 +32,8 @@ const Range = () => {
     },
   }
 
-  const [display, setDisplay] = useState('calendar')
+  const [display] = useState('calendar')
   const [events, setEvents] = useState([])
-  const navBar = [
-    {
-      label: 'List',
-      icon: 'pi pi-fw pi-list',
-      command: () => {
-        setDisplay('list')
-      },
-    },
-  ]
 
   useEffect(() => {
     fetch('/events.json')

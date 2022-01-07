@@ -1,49 +1,11 @@
-import React, { Component, useState } from 'react'
-import {
-  cibCcAmex,
-  cibCcApplePay,
-  cibCcMastercard,
-  cibCcPaypal,
-  cibCcStripe,
-  cibCcVisa,
-  cibGoogle,
-  cibFacebook,
-  cibLinkedin,
-  cifBr,
-  cifEs,
-  cifFr,
-  cifIn,
-  cifPl,
-  cifUs,
-  cibTwitter,
-  cilCloudDownload,
-  cilPeople,
-  cilUser,
-  cilUserFemale,
-} from '@coreui/icons'
+import React from 'react'
 import CIcon from '@coreui/icons-react'
 import {
   CCard,
   CCardBody,
-  CCardHeader,
   CCol,
-  CFormCheck,
-  CFormSwitch,
   CRow,
   CTableRow,
-  CButton,
-  CInputGroup,
-  CInputGroupText,
-  CFormInput,
-  CFormLabel,
-  CLink,
-  CModal,
-  CModalBody,
-  CModalFooter,
-  CModalHeader,
-  CModalTitle,
-  CPopover,
-  CTooltip,
   CAvatar,
   CTable,
   CTableHead,
@@ -51,23 +13,10 @@ import {
   CTableBody,
   CTableDataCell,
   CProgress,
-  CDropdownDivider,
-  CDropdownItem,
-  CDropdownMenu,
-  CDropdownToggle,
-  CDropdown,
-  CNavbarNav,
-  CCollapse,
-  CNavbarToggler,
-  CNavbarBrand,
-  CContainer,
-  CNavbar,
 } from '@coreui/react'
 import portuguese from '../../../translations/portuguese.js'
-import pacotes from '../../../mock/pacotes.js'
 import search from '../../../mock/search.js'
 import avatar2 from 'src/assets/images/avatars/1.jpg'
-import skills from '../../../mock/skills.js'
 import Rating from '@material-ui/lab/Rating'
 import Select from 'react-select'
 import makeAnimated from 'react-select/animated'
@@ -80,8 +29,6 @@ const options = [
 const animatedComponents = makeAnimated()
 
 const Validation = () => {
-  const [visible, setVisible] = useState(false)
-
   return (
     <>
       <Select
