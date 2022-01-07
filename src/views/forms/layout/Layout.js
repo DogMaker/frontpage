@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Range from '../range/Range'
 import {
   CButton,
@@ -6,13 +6,6 @@ import {
   CCardBody,
   CCardHeader,
   CCol,
-  CForm,
-  CFormCheck,
-  CFormInput,
-  CFormLabel,
-  CFormSelect,
-  CInputGroup,
-  CInputGroupText,
   CRow,
   CTable,
   CTableHead,
@@ -22,12 +15,6 @@ import {
   CTableDataCell,
   CProgress,
   CAvatar,
-  CModalFooter,
-  CModalBody,
-  CModalTitle,
-  CModalHeader,
-  CButtonGroup,
-  CModal,
   CCardText,
   CCardTitle,
 } from '@coreui/react'
@@ -36,11 +23,8 @@ import portuguese from '../../../translations/portuguese.js'
 import avatar2 from 'src/assets/images/avatars/1.jpg'
 import Rating from '@material-ui/lab/Rating'
 import ApiMercadoPago from './apiMercadoPago.js'
-import preferences from './preferences.js'
 
 const Layout = () => {
-  const [visible, setVisible] = useState(false)
-
   return (
     <CRow>
       <CCard className="mb-4">
