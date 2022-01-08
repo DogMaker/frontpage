@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CIcon from '@coreui/icons-react'
 import {
   CCard,
@@ -29,15 +29,30 @@ const options = [
 const animatedComponents = makeAnimated()
 
 const Validation = () => {
+  const [selectedOptions, setSelectedOptions] = useState([])
+
+  const handleChange = (options) => {
+    setSelectedOptions(Array.isArray(options) ? options.map((x) => x.value) : [])
+    console.log('Selected Options: ', selectedOptions)
+  }
+
   return (
     <>
       <Select
         closeMenuOnSelect={false}
         components={animatedComponents}
-        defaultValue={[options[1], options[2]]}
         isMulti
+        value={options.filter((obj) => selectedOptions.includes(obj.value))}
         options={options}
+        onChange={handleChange}
       />
+      {selectedOptions && (
+        <div style={{ marginTop: 20, lineHeight: '25px' }}>
+          <div>
+            <b>Selected Value: </b> {JSON.stringify(selectedOptions, null, 2)}
+          </div>
+        </div>
+      )}
       <br />
       <CRow>
         <CCol xs>
