@@ -16,16 +16,12 @@ import {
 } from '@coreui/react'
 import portuguese from '../../../translations/portuguese.js'
 import search from '../../../mock/search.js'
+import options from '../../../mock/habilities.js'
 import avatar2 from 'src/assets/images/avatars/1.jpg'
 import Rating from '@material-ui/lab/Rating'
 import Select from 'react-select'
 import makeAnimated from 'react-select/animated'
 
-const options = [
-  { value: 'Java', label: 'Java' },
-  { value: 'Php', label: 'Php' },
-  { value: 'Javascript', label: 'Javascript' },
-]
 const animatedComponents = makeAnimated()
 
 const Validation = () => {

@@ -50,6 +50,13 @@ const skills = {
         group: 'tests',
         color: 'danger',
       },
+      {
+        skill: 'python',
+        level: 50,
+        mentory: true,
+        group: 'tests',
+        color: 'danger',
+      },
     ],
   },
 }
