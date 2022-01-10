@@ -49,6 +49,7 @@ const Validation = () => {
         isMulti
         value={options.filter((obj) => selectedOptions.includes(obj.value))}
         options={options}
+        placeholder={portuguese.searchPage.tagsInputs}
         onChange={handleChange}
       />
       {selectedOptions && (

@@ -53,6 +53,7 @@ const portuguese = {
     book: 'Agendar aula',
     price: 'preço aula',
     description: 'descrição',
+    tagsInputs: 'Digite aqui as habilidades que deseja procurar!',
   },
   personalPage: {
     class: 'Preços aulas',
