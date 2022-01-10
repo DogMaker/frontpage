@@ -29,8 +29,17 @@ const Validation = () => {
 
   const handleChange = (options) => {
     setSelectedOptions(Array.isArray(options) ? options.map((x) => x.value) : [])
-    console.log('Selected Options: ', selectedOptions)
   }
+
+  function filterViaSkills(arr, selected) {
+    return arr.filter((obj) =>
+      selected.every((selected) =>
+        obj.knowledge.skills.some((obj) => obj.skill.includes(selected)),
+      ),
+    )
+  }
+
+  let mentors = filterViaSkills(search, selectedOptions)
 
   return (
     <>
@@ -45,14 +54,14 @@ const Validation = () => {
       {selectedOptions && (
         <div style={{ marginTop: 20, lineHeight: '25px' }}>
           <div>
-            <b>Selected Value: </b> {JSON.stringify(selectedOptions, null, 2)}
+            <b>Tags : </b> {JSON.stringify(selectedOptions, null, 2)}
           </div>
         </div>
       )}
       <br />
       <CRow>
         <CCol xs>
-          {search.map((item, index) => (
+          {mentors.map((item, index) => (
             <CCard className="mb-4" v-for="item in tableItems" key={index}>
               <CCardBody>
                 <div className="fs-3 fw-semibold">

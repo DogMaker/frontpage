@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import search from '../../../mock/search.js'
 import options from '../../../mock/habilities.js'
 import Select from 'react-select'
@@ -8,13 +8,11 @@ const animatedComponents = makeAnimated()
 
 const FloatingLabels = () => {
   const [selectedOptions, setSelectedOptions] = useState([])
-  const [saco, setSaco] = useState([])
 
   const handleChange = (options) => {
     setSelectedOptions(Array.isArray(options) ? options.map((x) => x.value) : [])
     console.log('Selected Options: ', selectedOptions)
   }
-  const selected = [80]
 
   function filterViaSkills(arr, selected) {
     return arr.filter((obj) =>
@@ -25,7 +23,6 @@ const FloatingLabels = () => {
   }
 
   let resp = filterViaSkills(search, selectedOptions)
-  console.log(resp)
 
   return (
     <div>
