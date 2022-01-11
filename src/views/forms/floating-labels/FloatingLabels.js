@@ -52,7 +52,15 @@ const FloatingLabels = () => {
   }
 
   const grouped = groupBy(resp, (day) => day.day)
+
   console.log(grouped)
+
+  grouped.forEach(function (value, key) {
+    console.log(key)
+    value.forEach(function (value, key) {
+      console.log(key + ' = ' + value.time)
+    })
+  })
 
   var gsDayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
   var gsMonthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'Jun', 'Jul', 'Sep', 'Oct', 'Nov', 'Dec']
@@ -70,7 +78,7 @@ const FloatingLabels = () => {
     } else if (parameter === undefined) {
       return 'table-dark'
     } else {
-      return 'table-light'
+      return 'table-success'
     }
   }
 
