@@ -41,7 +41,7 @@ const _nav = [
     component: CNavItem,
     name: portuguese.nav.payments,
     icon: <CIcon icon={cilCreditCard} customClassName="nav-icon" />,
-    to: '/forms/range',
+    to: '/forms/floating-labels',
   },
   {
     component: CNavItem,
