@@ -9,11 +9,13 @@ import { DataView } from 'primereact/dataview'
 import { Calendar } from '@fullcalendar/core'
 import { FullCalendar } from 'primereact/fullcalendar'
 import dayGridPlugin from '@fullcalendar/daygrid'
+import timeGridWeek from '@fullcalendar/timegrid'
+
 import portuguese from '../../../translations/portuguese.js'
 
 const Range = () => {
   const fullCalendarOptions = {
-    plugins: [dayGridPlugin],
+    plugins: [dayGridPlugin, timeGridWeek],
     defaultView: 'dayGridMonth',
   }
 
@@ -102,6 +104,7 @@ const Range = () => {
             className="p-mx-3 p-mt-6 p-mb-3 p-mx-md-6"
             options={fullCalendarOptions}
             events={events}
+            eventColor="red"
           />
         )}
       </main>
