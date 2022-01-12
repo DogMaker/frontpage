@@ -61,7 +61,7 @@ const portuguese = {
     priceForUnity: 'Preço aula:',
     callendar: 'Calendário',
     reviews: 'Avaliações',
-    checkAvailability: 'Verificar disponibilidade semanal',
+    checkAvailability: 'Verificar disponibilidade mensal',
   },
 }
 

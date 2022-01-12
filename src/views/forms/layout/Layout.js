@@ -1,5 +1,5 @@
 import React from 'react'
-import Range from '../range/Range'
+import InputGroup from '../input-group/InputGroup'
 import {
   CButton,
   CCard,
@@ -123,7 +123,8 @@ const Layout = () => {
         <CCardBody>
           <div className="fs-3 fw-semibold">{portuguese.personalPage.callendar}</div>
           <br />
-          <Range />
+          <InputGroup />
+          <br />
           <div className="callendarButton">
             <button type="button" className="btn btn-outline-danger">
               {portuguese.personalPage.checkAvailability}

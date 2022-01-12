@@ -7,13 +7,14 @@ import React, { Component } from 'react'
 const events = [
   {
     id: 1,
-    title: 'event 1',
-    start: '2021-06-14T10:00:00',
-    end: '2021-06-14T12:00:00',
+    title: '',
+    start: '2022-01-14T06:00:00',
+    end: '2022-01-14T12:00:00',
   },
   {
     id: 2,
     title: 'event 2',
+    url: 'https://whereby.com/bf8e144d-9719-45dc-91aa-ca74fe62bf2f',
     start: '2021-06-16T13:00:00',
     end: '2021-06-16T18:00:00',
   },
@@ -27,7 +28,7 @@ function FloatingLabels() {
         plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
         initialView="dayGridMonth"
         headerToolbar={{
-          center: 'dayGridMonth,timeGridWeek,timeGridDay new',
+          center: 'dayGridMonth,timeGridWeek,timeGridDay',
         }}
         customButtons={{
           new: {
