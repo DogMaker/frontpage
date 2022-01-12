@@ -62,7 +62,7 @@ const FloatingLabels = () => {
     })
   })
 
-  var gsDayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+  var gsDayNames = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
   var gsMonthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'Jun', 'Jul', 'Sep', 'Oct', 'Nov', 'Dec']
 
   var d = new Date('2022-01-26T15:00:00+00:00')
@@ -105,13 +105,13 @@ const FloatingLabels = () => {
           {resp.map((item, index) => (
             <tr key={index.time}>
               <th scope="row">{item.time}</th>
-              <td className={dayHandler(item.day, 'Sunday')}></td>
-              <td className={dayHandler(item.day, 'Monday')}></td>
-              <td className={dayHandler(item.day, 'Tuesday')}></td>
-              <td className={dayHandler(item.day, 'Wednesday')}></td>
-              <td className={dayHandler(item.day, 'Thursday')}></td>
-              <td className={dayHandler(item.day, 'Friday')}></td>
-              <td className={dayHandler(item.day, 'Saturday')}></td>
+              <td className={dayHandler(item.day, 'sunday')}></td>
+              <td className={dayHandler(item.day, 'monday')}></td>
+              <td className={dayHandler(item.day, 'tuesday')}></td>
+              <td className={dayHandler(item.day, 'wednesday')}></td>
+              <td className={dayHandler(item.day, 'thursday')}></td>
+              <td className={dayHandler(item.day, 'friday')}></td>
+              <td className={dayHandler(item.day, 'saturday')}></td>
             </tr>
           ))}
         </tbody>
