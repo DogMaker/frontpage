@@ -16,6 +16,7 @@ const portuguese = {
     personalRegistry: 'Cadastro Pessoal',
     skillsRegistry: 'Cadastro de Habilidades',
     packageRegistry: 'Cadastro de Pacotes',
+    classSchedule: 'Cadastro de Aulas',
   },
   registryPersonalPage: {
     email: 'email',

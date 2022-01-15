@@ -35,6 +35,11 @@ const _nav = [
         name: portuguese.nav.packageRegistry,
         to: '/forms/checks-radios',
       },
+      {
+        component: CNavItem,
+        name: portuguese.nav.classSchedule,
+        to: '/buttons/dropdowns',
+      },
     ],
   },
   {
