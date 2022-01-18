@@ -21,6 +21,11 @@ const stub = [
   },
   {
     eventType: 'FREE',
+    start: '2022-01-16 12:00:00',
+    end: '2022-01-16T13:00',
+  },
+  {
+    eventType: 'FREE',
     start: '2022-01-16 13:00:00',
     end: '2022-01-16T14:00',
   },
@@ -76,158 +81,8 @@ const stub = [
   },
   {
     eventType: 'FREE',
-    start: '2022-01-17 00:00:00',
-    end: '2022-01-17T01:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-17 01:00:00',
-    end: '2022-01-17T02:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-17 02:00:00',
-    end: '2022-01-17T03:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-17 03:00:00',
-    end: '2022-01-17T04:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-17 04:00:00',
-    end: '2022-01-17T05:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-17 05:00:00',
-    end: '2022-01-17T06:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-17 06:00:00',
-    end: '2022-01-17T07:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-17 07:00:00',
-    end: '2022-01-17T08:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-17 08:00:00',
-    end: '2022-01-17T09:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-17 09:00:00',
-    end: '2022-01-17T10:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-17 10:00:00',
-    end: '2022-01-17T11:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-17 11:00:00',
-    end: '2022-01-17T12:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-17 13:00:00',
-    end: '2022-01-17T14:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-17 14:00:00',
-    end: '2022-01-17T15:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-17 15:00:00',
-    end: '2022-01-17T16:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-17 16:00:00',
-    end: '2022-01-17T17:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-17 17:00:00',
-    end: '2022-01-17T18:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-17 18:00:00',
-    end: '2022-01-17T19:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-17 19:00:00',
-    end: '2022-01-17T20:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-17 20:00:00',
-    end: '2022-01-17T21:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-17 21:00:00',
-    end: '2022-01-17T22:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-17 22:00:00',
-    end: '2022-01-17T23:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-17 23:00:00',
-    end: '2022-01-18T00:00',
-  },
-  {
-    eventType: 'FREE',
     start: '2022-01-18 00:00:00',
     end: '2022-01-18T01:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-18 01:00:00',
-    end: '2022-01-18T02:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-18 02:00:00',
-    end: '2022-01-18T03:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-18 03:00:00',
-    end: '2022-01-18T04:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-18 04:00:00',
-    end: '2022-01-18T05:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-18 05:00:00',
-    end: '2022-01-18T06:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-18 06:00:00',
-    end: '2022-01-18T07:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-18 07:00:00',
-    end: '2022-01-18T08:00',
   },
   {
     eventType: 'FREE',
@@ -248,6 +103,11 @@ const stub = [
     eventType: 'FREE',
     start: '2022-01-18 11:00:00',
     end: '2022-01-18T12:00',
+  },
+  {
+    eventType: 'FREE',
+    start: '2022-01-18 12:00:00',
+    end: '2022-01-18T13:00',
   },
   {
     eventType: 'FREE',
@@ -311,41 +171,6 @@ const stub = [
   },
   {
     eventType: 'FREE',
-    start: '2022-01-19 01:00:00',
-    end: '2022-01-19T02:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-19 02:00:00',
-    end: '2022-01-19T03:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-19 03:00:00',
-    end: '2022-01-19T04:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-19 04:00:00',
-    end: '2022-01-19T05:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-19 05:00:00',
-    end: '2022-01-19T06:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-19 06:00:00',
-    end: '2022-01-19T07:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-19 07:00:00',
-    end: '2022-01-19T08:00',
-  },
-  {
-    eventType: 'FREE',
     start: '2022-01-19 08:00:00',
     end: '2022-01-19T09:00',
   },
@@ -363,6 +188,11 @@ const stub = [
     eventType: 'FREE',
     start: '2022-01-19 11:00:00',
     end: '2022-01-19T12:00',
+  },
+  {
+    eventType: 'FREE',
+    start: '2022-01-19 12:00:00',
+    end: '2022-01-19T13:00',
   },
   {
     eventType: 'FREE',
@@ -426,41 +256,6 @@ const stub = [
   },
   {
     eventType: 'FREE',
-    start: '2022-01-20 01:00:00',
-    end: '2022-01-20T02:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-20 02:00:00',
-    end: '2022-01-20T03:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-20 03:00:00',
-    end: '2022-01-20T04:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-20 04:00:00',
-    end: '2022-01-20T05:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-20 05:00:00',
-    end: '2022-01-20T06:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-20 06:00:00',
-    end: '2022-01-20T07:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-20 07:00:00',
-    end: '2022-01-20T08:00',
-  },
-  {
-    eventType: 'FREE',
     start: '2022-01-20 08:00:00',
     end: '2022-01-20T09:00',
   },
@@ -478,6 +273,11 @@ const stub = [
     eventType: 'FREE',
     start: '2022-01-20 11:00:00',
     end: '2022-01-20T12:00',
+  },
+  {
+    eventType: 'FREE',
+    start: '2022-01-20 12:00:00',
+    end: '2022-01-20T13:00',
   },
   {
     eventType: 'FREE',
@@ -541,41 +341,6 @@ const stub = [
   },
   {
     eventType: 'FREE',
-    start: '2022-01-22 01:00:00',
-    end: '2022-01-22T02:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-22 02:00:00',
-    end: '2022-01-22T03:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-22 03:00:00',
-    end: '2022-01-22T04:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-22 04:00:00',
-    end: '2022-01-22T05:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-22 05:00:00',
-    end: '2022-01-22T06:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-22 06:00:00',
-    end: '2022-01-22T07:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-22 07:00:00',
-    end: '2022-01-22T08:00',
-  },
-  {
-    eventType: 'FREE',
     start: '2022-01-22 08:00:00',
     end: '2022-01-22T09:00',
   },
@@ -593,6 +358,11 @@ const stub = [
     eventType: 'FREE',
     start: '2022-01-22 11:00:00',
     end: '2022-01-22T12:00',
+  },
+  {
+    eventType: 'FREE',
+    start: '2022-01-22 12:00:00',
+    end: '2022-01-22T13:00',
   },
   {
     eventType: 'FREE',
@@ -656,41 +426,6 @@ const stub = [
   },
   {
     eventType: 'FREE',
-    start: '2022-01-23 01:00:00',
-    end: '2022-01-23T02:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-23 02:00:00',
-    end: '2022-01-23T03:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-23 03:00:00',
-    end: '2022-01-23T04:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-23 04:00:00',
-    end: '2022-01-23T05:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-23 05:00:00',
-    end: '2022-01-23T06:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-23 06:00:00',
-    end: '2022-01-23T07:00',
-  },
-  {
-    eventType: 'FREE',
-    start: '2022-01-23 07:00:00',
-    end: '2022-01-23T08:00',
-  },
-  {
-    eventType: 'FREE',
     start: '2022-01-23 08:00:00',
     end: '2022-01-23T09:00',
   },
@@ -708,6 +443,11 @@ const stub = [
     eventType: 'FREE',
     start: '2022-01-23 11:00:00',
     end: '2022-01-23T12:00',
+  },
+  {
+    eventType: 'FREE',
+    start: '2022-01-23 12:00:00',
+    end: '2022-01-23T13:00',
   },
   {
     eventType: 'FREE',
@@ -740,5 +480,4 @@ const stub = [
     end: '2022-01-23T19:00',
   },
 ]
-
 export default stub
