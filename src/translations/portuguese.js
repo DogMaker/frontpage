@@ -5,7 +5,17 @@ const portuguese = {
     buy: 'Comprar',
     classes: 'Aulas',
   },
+  daysOfTheWeek: [
+    { value: 'SUNDAY', label: 'domingo' },
+    { value: 'MONDAY', label: 'segunda' },
+    { value: 'TUESDAY', label: 'terça' },
+    { value: 'WENDSDAY', label: 'quarta' },
+    { value: 'THURSDAY', label: 'quinta' },
+    { value: 'FRIDAY', label: 'sexta' },
+    { value: 'SATURDAY', label: 'sabado' },
+  ],
   currency: 'R$',
+  dateFormat: 'd MMMM, yyyy h:mm aa',
   nav: {
     calendar: 'Calendário de aulas',
     searchMentor: 'Procurar Mentores',
@@ -34,6 +44,9 @@ const portuguese = {
     languages: 'Idiomas',
     name: 'nome',
     skills: 'Habilidades',
+  },
+  scheduleMentorClass: {
+    setScheduleClass: 'Escolha os dias que não deseja trabalhar',
   },
   registryPricePage: {
     valuePerMentoringDescription: 'Valor unitário por mentoria',

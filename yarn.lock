@@ -8210,6 +8210,11 @@ react-datepicker@^4.6.0:
     react-onclickoutside "^6.12.0"
     react-popper "^2.2.5"
 
+react-datetime-range-super-picker@^1.14.1:
+  version "1.14.1"
+  resolved "https://registry.yarnpkg.com/react-datetime-range-super-picker/-/react-datetime-range-super-picker-1.14.1.tgz#8e06fc47d92bec0f0e64e1394ec2b5004074d431"
+  integrity sha512-6AZ6q/Rp6JPbZEjVF3820JCroI4152AAz0zZ/ClRxZkkqfldqLfXnD1KDDFO4TnofFZdhmIKqvJAXl6vyi22Uw==
+
 react-dev-utils@^12.0.0:
   version "12.0.0"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-12.0.0.tgz#4eab12cdb95692a077616770b5988f0adf806526"
