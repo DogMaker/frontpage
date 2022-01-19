@@ -1,0 +1,46 @@
+{
+  "actor": "45732315012",
+  "audience": "Other financial Institution",
+  "consentContext": {
+    "customerUserAgent": "Postman",
+    "fapiAuthDate": "2021-07-01",
+    "fapiCustomerIpAddress": "localhost",
+    "fapiInteractionId": "UID"
+  },
+  "data": {
+    "businessEntity": "2130450456",
+    "expirationDateTime": "2022-12-30T21:30:00Z",
+    "loggedUser": "66361175162",
+    "permissions": [
+      "CUSTOMERS_PERSONAL_IDENTIFICATIONS_READ",
+      "CUSTOMERS_PERSONAL_ADITTIONALINFO_READ",
+      "CUSTOMERS_BUSINESS_IDENTIFICATIONS_READ",
+      "CUSTOMERS_BUSINESS_ADITTIONALINFO_READ",
+      "ACCOUNTS_READ",
+      "ACCOUNTS_BALANCES_READ",
+      "ACCOUNTS_TRANSACTIONS_READ",
+      "ACCOUNTS_OVERDRAFT_LIMITS_READ",
+      "CREDIT_CARDS_ACCOUNTS_READ",
+      "CREDIT_CARDS_ACCOUNTS_BILLS_READ",
+      "CREDIT_CARDS_ACCOUNTS_BILLS_TRANSACTIONS_READ",
+      "CREDIT_CARDS_ACCOUNTS_LIMITS_READ",
+      "CREDIT_CARDS_ACCOUNTS_TRANSACTIONS_READ",
+      "INVOICE_FINANCINGS_READ",
+      "INVOICE_FINANCINGS_SCHEDULED_INSTALMENTS_READ",
+      "INVOICE_FINANCINGS_PAYMENTS_READ",
+      "INVOICE_FINANCINGS_WARRANTIES_READ"
+    ],
+    "status": "AWAITING_AUTHORISATION",
+    "transactionFromDateTime": "2021-09-10T00:00:00Z",
+    "transactionToDateTime": "2021-09-10T23:59:59Z"
+  },
+  "dataText": "Sharing data",
+  "definition": {
+    "id": "OpenBankingDataConsent",
+    "locale": "en-US",
+    "version": "1.0"
+  },
+  "purposeText": "Share data to third party provider",
+  "status": "pending",
+  "subject": "6d3fd791-7b98-4a17-a85e-539b76b9b7ad"
+}

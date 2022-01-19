@@ -30,6 +30,7 @@ import skills from '../../../mock/skills.js'
 import Select from 'react-select'
 import makeAnimated from 'react-select/animated'
 import options from '../../../mock/habilities.js'
+import sendPreferences from './Request.js'
 
 const Dropdowns = () => {
   const [visible, setVisible] = useState()
@@ -39,7 +40,7 @@ const Dropdowns = () => {
   const [endTime, setEndTime] = useState(new Date())
   const [selectedOptions, setSelectedOptions] = useState([])
   const animatedComponents = makeAnimated()
-  const [classState, setClassState] = useState('')
+  const [classState, setClassState] = useState('FREE')
 
   const handleChange = (options) => {
     setSelectedOptions(Array.isArray(options) ? options.map((x) => x.value) : [])
@@ -52,17 +53,17 @@ const Dropdowns = () => {
   const showRequest = () => {
     let scheduleEvent = {
       eventType: classState,
-      start: startDate,
-      end: endDate,
+      start: '2022-01-20T18:00:00',
+      end: '2022-01-20T18:00:00',
       exceptDays: selectedOptions,
       exceptTimes: [
         {
-          start: startTime,
-          end: endTime,
+          start: '08:00',
+          end: '09:00',
         },
       ],
     }
-    console.log(scheduleEvent)
+    sendPreferences(scheduleEvent)
     setVisible(false)
   }
 
@@ -96,7 +97,6 @@ const Dropdowns = () => {
             <CFormSelect
               aria-label="Default select example"
               options={[
-                'Select the status of the class',
                 { label: 'Free', value: 'FREE' },
                 { label: 'Block', value: 'BLOCK' },
               ]}
