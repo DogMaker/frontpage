@@ -74,11 +74,16 @@ const Dropdowns = () => {
       })
   }
 
+  function convertIso(date) {
+    var isoDateTime = new Date(date.getTime() - date.getTimezoneOffset() * 60000).toISOString()
+
+    return isoDateTime
+  }
   const showRequest = () => {
     let scheduleEvent = {
       eventType: classState,
-      start: startDate.toISOString(),
-      end: endDate.toISOString(),
+      start: convertIso(startDate),
+      end: convertIso(endDate),
       exceptDays: selectedOptions,
       exceptTimes: [
         {
