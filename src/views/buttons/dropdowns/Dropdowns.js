@@ -30,10 +30,11 @@ import skills from '../../../mock/skills.js'
 import Select from 'react-select'
 import makeAnimated from 'react-select/animated'
 import options from '../../../mock/habilities.js'
-import sendPreferences from './Request.js'
+import axios from 'axios'
 
 const Dropdowns = () => {
   const [visible, setVisible] = useState()
+  const [response, setResponse] = useState()
   const [startDate, setStartDate] = useState(new Date())
   const [endDate, setEndDate] = useState(new Date())
   const [startTime, setStartTime] = useState(new Date())
@@ -50,11 +51,34 @@ const Dropdowns = () => {
     setClassState(e.target.value)
   }
 
+  function sendPreferences(preferences) {
+    var config = {
+      method: 'post',
+      url: 'http://0.0.0.0:8080/create-range',
+      withCredentials: false,
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+      },
+      data: preferences,
+    }
+
+    axios(config)
+      .then(function (response) {
+        var resp = JSON.stringify(response.data)
+        var obj = JSON.parse(resp)
+        setResponse(obj)
+      })
+      .catch(function (error) {
+        console.error(error)
+      })
+  }
+
   const showRequest = () => {
     let scheduleEvent = {
       eventType: classState,
-      start: '2022-01-20T18:00:00',
-      end: '2022-01-20T18:00:00',
+      start: startDate.toISOString(),
+      end: endDate.toISOString(),
       exceptDays: selectedOptions,
       exceptTimes: [
         {
@@ -76,7 +100,7 @@ const Dropdowns = () => {
               <strong>Cadastrar aulas</strong>
             </CCardHeader>
             <CCardBody>
-              <FloatingLabels />
+              <FloatingLabels data={response} />
               <br />
               <CButton onClick={() => setVisible(!visible)}>
                 Cadastrar disponibilidade de aulas

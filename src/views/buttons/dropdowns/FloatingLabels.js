@@ -24,7 +24,7 @@ const events1 = [
 
 const events = stub
 
-function FloatingLabels() {
+function FloatingLabels(response) {
   return (
     <div className="App">
       <FullCalendar
@@ -39,7 +39,7 @@ function FloatingLabels() {
             click: () => console.log('new event'),
           },
         }}
-        events={events}
+        events={response.data}
         eventColor="green"
         nowIndicator
         dateClick={(e) => console.log(e.dateStr)}

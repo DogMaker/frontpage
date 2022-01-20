@@ -17,8 +17,6 @@ function sendPreferences(preferences) {
     .then(function (response) {
       var resp = JSON.stringify(response.data)
       var obj = JSON.parse(resp)
-      //setId(obj.id)
-      console.log(obj)
     })
     .catch(function (error) {
       console.error(error)
