@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import InputGroup from '../input-group/InputGroup'
+import FlowCartByDate from './FlowCart'
 import {
   CButton,
   CCard,
@@ -25,6 +26,8 @@ import Rating from '@material-ui/lab/Rating'
 import ApiMercadoPago from './apiMercadoPago.js'
 
 const Layout = () => {
+  const [cartDate, setCartDate] = useState(false)
+
   return (
     <CRow>
       <CCard className="mb-4">
@@ -84,7 +87,13 @@ const Layout = () => {
               {portuguese.personalPage.priceForUnity}{' '}
               <strong>{portuguese.currency + search.prices.valuePerMentoring}</strong>
             </button>
-            <ApiMercadoPago />
+            <button
+              type="button"
+              className="btn btn-primary rounded-pill"
+              onClick={() => setCartDate(true)}
+            >
+              <strong>Agendar</strong>
+            </button>
           </div>
         </CCardBody>
         <CCardBody>
@@ -153,6 +162,7 @@ const Layout = () => {
             </CCard>
           ))}
         </CCardBody>
+        <FlowCartByDate data={cartDate} />
       </CCard>
     </CRow>
   )
