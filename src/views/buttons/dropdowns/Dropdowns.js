@@ -35,10 +35,10 @@ import axios from 'axios'
 const Dropdowns = () => {
   const [visible, setVisible] = useState()
   const [response, setResponse] = useState()
-  const [startDate, setStartDate] = useState(new Date())
-  const [endDate, setEndDate] = useState(new Date())
-  const [startTime, setStartTime] = useState(new Date())
-  const [endTime, setEndTime] = useState(new Date())
+  const [startDate, setStartDate] = useState(new Date('2022-01-01T00:00:00'))
+  const [endDate, setEndDate] = useState(new Date('2022-01-01T00:00:00'))
+  const [startTime, setStartTime] = useState(new Date('2022-01-01T00:00:00'))
+  const [endTime, setEndTime] = useState(new Date('2022-01-01T00:00:00'))
   const [selectedOptions, setSelectedOptions] = useState([])
   const animatedComponents = makeAnimated()
   const [classState, setClassState] = useState('FREE')
@@ -87,8 +87,8 @@ const Dropdowns = () => {
       exceptDays: selectedOptions,
       exceptTimes: [
         {
-          start: '08:00',
-          end: '09:00',
+          start: startTime.toString().substr(16, 5),
+          end: endTime.toString().substr(16, 5),
         },
       ],
     }
@@ -186,7 +186,7 @@ const Dropdowns = () => {
               onChange={(date) => setStartTime(date)}
               showTimeSelect
               showTimeSelectOnly
-              timeIntervals={15}
+              timeIntervals={60}
               timeCaption="Time"
               dateFormat="h:mm aa"
             />
@@ -199,7 +199,7 @@ const Dropdowns = () => {
               onChange={(date) => setEndTime(date)}
               showTimeSelect
               showTimeSelectOnly
-              timeIntervals={15}
+              timeIntervals={60}
               timeCaption="Time"
               dateFormat="h:mm aa"
             />
