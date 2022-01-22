@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import InputGroup from '../input-group/InputGroup'
+import InputGroup from './FloatingLabels'
 import FlowCartByDate from './FlowCart'
 import {
   CButton,
@@ -86,13 +86,6 @@ const Layout = () => {
             <button type="button" className="btn btn-light rounded-pill" disable>
               {portuguese.personalPage.priceForUnity}{' '}
               <strong>{portuguese.currency + search.prices.valuePerMentoring}</strong>
-            </button>
-            <button
-              type="button"
-              className="btn btn-primary rounded-pill"
-              onClick={() => setCartDate(true)}
-            >
-              <strong>Agendar</strong>
             </button>
           </div>
         </CCardBody>

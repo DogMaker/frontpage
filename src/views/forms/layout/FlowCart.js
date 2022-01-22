@@ -26,7 +26,9 @@ const FlowCartByDate = (flag) => {
           <CModalTitle>Extra large modal</CModalTitle>
         </CModalHeader>
         <CModalBody>
-          <InputGroup />
+          <div>
+            <InputGroup />
+          </div>
           <button type="button" className="btn btn-primary rounded-pill">
             <strong>Agendar</strong>
           </button>
