@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import FlowCart from './FlowCart'
 import InputGroup from '../input-group/InputGroup'
 import {
   CButton,
@@ -16,22 +15,24 @@ import {
   CPopover,
   CRow,
   CTooltip,
+  CAlert,
 } from '@coreui/react'
+import ApiMercadoPago from './apiMercadoPago.js'
 
 const FlowCartByDate = (flag) => {
+  console.log(flag.data)
   return (
     <>
-      <CModal fullscreen="xxl" visible={flag.data}>
+      <CModal fullscreen="xl" visible={flag.data.visible}>
         <CModalHeader>
-          <CModalTitle>Extra large modal</CModalTitle>
+          <CModalTitle>{flag.data.id}</CModalTitle>
         </CModalHeader>
         <CModalBody>
-          <div>
-            <InputGroup />
-          </div>
-          <button type="button" className="btn btn-primary rounded-pill">
-            <strong>Agendar</strong>
-          </button>
+          <CAlert color="danger">
+            Você será direcionado ao mercadopago para efetuar o pagamento, em seguida quando
+            aprovado retornará para plataforma com o agendameto da aula!
+          </CAlert>
+          <ApiMercadoPago />
         </CModalBody>
       </CModal>
     </>

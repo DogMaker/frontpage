@@ -23,11 +23,8 @@ import search from '../../../mock/searchById.js'
 import portuguese from '../../../translations/portuguese.js'
 import avatar2 from 'src/assets/images/avatars/1.jpg'
 import Rating from '@material-ui/lab/Rating'
-import ApiMercadoPago from './apiMercadoPago.js'
 
 const Layout = () => {
-  const [cartDate, setCartDate] = useState(false)
-
   return (
     <CRow>
       <CCard className="mb-4">
@@ -155,7 +152,6 @@ const Layout = () => {
             </CCard>
           ))}
         </CCardBody>
-        <FlowCartByDate data={cartDate} />
       </CCard>
     </CRow>
   )
