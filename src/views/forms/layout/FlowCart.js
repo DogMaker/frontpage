@@ -20,7 +20,6 @@ import {
 import ApiMercadoPago from './apiMercadoPago.js'
 
 const FlowCartByDate = (flag) => {
-  console.log(flag.data)
   return (
     <>
       <CModal fullscreen="xl" visible={flag.data.visible}>
