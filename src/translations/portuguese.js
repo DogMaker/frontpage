@@ -27,6 +27,8 @@ const portuguese = {
     skillsRegistry: 'Cadastro de Habilidades',
     packageRegistry: 'Cadastro de Pacotes',
     classSchedule: 'Cadastro de Aulas',
+    followUp: 'Acompanhamento',
+    tasks: 'Tarefas',
   },
   registryPersonalPage: {
     email: 'email',

@@ -42,7 +42,7 @@ const AppHeaderDropdown = () => {
             42
           </CBadge>
         </CDropdownItem>
-        <CDropdownItem href="#">
+        <CDropdownItem href="/#/icons/brands">
           <CIcon icon={cilTask} className="me-2" />
           {portuguese.headerBar.tasks}
           <CBadge color="danger" className="ms-2">
@@ -56,7 +56,7 @@ const AppHeaderDropdown = () => {
           <CIcon icon={cilSettings} className="me-2" />
           {portuguese.headerBar.settings}
         </CDropdownItem>
-        <CDropdownItem href="#">
+        <CDropdownItem href="/#/forms/floating-labels">
           <CIcon icon={cilCreditCard} className="me-2" />
           {portuguese.headerBar.payments}
         </CDropdownItem>

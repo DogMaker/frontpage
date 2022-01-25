@@ -60,6 +60,18 @@ const _nav = [
     icon: <CIcon icon={cilSchool} customClassName="nav-icon" />,
     to: '/forms/validation',
   },
+  {
+    component: CNavGroup,
+    name: portuguese.nav.followUp,
+    icon: <CIcon icon={cilNotes} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: portuguese.nav.tasks,
+        to: '/icons/brands',
+      },
+    ],
+  },
 ]
 
 export default _nav
