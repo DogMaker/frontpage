@@ -80,7 +80,7 @@ const Layout = () => {
           <div className="fs-3 fw-semibold">{portuguese.personalPage.class}</div>
           <br />
           <div className="display-inline-flags">
-            <button type="button" className="btn btn-light rounded-pill" disable>
+            <button type="button" className="btn btn-outline-danger" disable>
               {portuguese.personalPage.priceForUnity}{' '}
               <strong>{portuguese.currency + search.prices.valuePerMentoring}</strong>
             </button>
