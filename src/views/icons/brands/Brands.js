@@ -1,8 +1,25 @@
-import React from 'react'
-import { CCard, CCardBody, CCardHeader, CCol, CRow } from '@coreui/react'
+import { React, useState } from 'react'
+import { cilCheckCircle, cilXCircle } from '@coreui/icons'
+
+import {
+  CCard,
+  CCardBody,
+  CCardHeader,
+  CCol,
+  CRow,
+  CFormCheck,
+  CFormFloating,
+  CFormTextarea,
+  CFormLabel,
+  CInputGroup,
+  CButton,
+  CFormInput,
+  CAlert,
+} from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 import { brandSet } from '@coreui/icons'
 import { DocsCallout } from 'src/components'
+import act from './stub.js'
 
 const toKebabCase = (str) => {
   return str.replace(/([a-z0-9]|(?=[A-Z]))([A-Z])/g, '$1-$2').toLowerCase()
@@ -18,20 +35,53 @@ export const getIconsView = (iconset) => {
 }
 
 const CoreUIIcons = () => {
+  const [status, setStatus] = useState({
+    icon: cilXCircle,
+    color: 'dark',
+  })
+
+  function getColor(status) {
+    if (status) {
+      return 'success'
+    } else {
+      return 'dark'
+    }
+  }
+  function getIcon(status) {
+    if (status) {
+      return cilCheckCircle
+    } else {
+      return cilXCircle
+    }
+  }
   return (
     <>
-      <CCard className="mb-4">
-        <CCardHeader>Actiones</CCardHeader>
-        <CCardBody>
-          <CRow className="text-center"></CRow>
-        </CCardBody>
-      </CCard>
-      <CCard className="mb-4">
-        <CCardHeader>Actiones</CCardHeader>
-        <CCardBody>
-          <CRow className="text-center"></CRow>
-        </CCardBody>
-      </CCard>
+      {act.actions.map((item, index) => (
+        <CCard className="mb-4" v-for="item in tableItems" key={index}>
+          <CCardHeader>
+            <strong>{item.actionName}</strong>
+          </CCardHeader>
+          <CCardBody>
+            {item.actionContext.map((item, index) => (
+              <CAlert
+                color={getColor(item.completed)}
+                variant="solid"
+                className="d-flex align-items-center"
+                v-for="item in tableItems"
+                key={index}
+              >
+                <CIcon
+                  icon={getIcon(item.completed)}
+                  className="flex-shrink-0 me-2"
+                  width={24}
+                  height={24}
+                />
+                <div>{item.description}</div>
+              </CAlert>
+            ))}
+          </CCardBody>
+        </CCard>
+      ))}
     </>
   )
 }
