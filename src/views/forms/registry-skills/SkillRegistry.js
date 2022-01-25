@@ -19,7 +19,7 @@ import {
 import portuguese from '../../../translations/portuguese.js'
 import skills from '../../../mock/skills.js'
 
-const Select = () => {
+const SkillRegistry = () => {
   return (
     <CRow>
       <CCol xs={12}>
@@ -87,4 +87,4 @@ const Select = () => {
   )
 }
 
-export default Select
+export default SkillRegistry

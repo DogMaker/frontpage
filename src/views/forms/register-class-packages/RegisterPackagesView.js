@@ -27,7 +27,7 @@ import portuguese from '../../../translations/portuguese.js'
 import pacotes from '../../../mock/pacotes.js'
 import { RegistryPackages } from './RegistryPackages'
 
-const ClassPackage = () => {
+const RegisterPackagesView = () => {
   const [visible, setVisible] = useState(false)
 
   return (
@@ -101,4 +101,4 @@ const ClassPackage = () => {
   )
 }
 
-export default ClassPackage
+export default RegisterPackagesView

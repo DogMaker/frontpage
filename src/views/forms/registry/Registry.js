@@ -16,7 +16,7 @@ import {
 import portuguese from '../../../translations/portuguese.js'
 import cadastro from '../../../mock/cadastro.js'
 
-const FormControl = () => {
+const Registry = () => {
   return (
     <CRow>
       <CCol xs={12}>
@@ -107,4 +107,4 @@ const FormControl = () => {
   )
 }
 
-export default FormControl
+export default Registry

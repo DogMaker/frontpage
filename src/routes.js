@@ -26,13 +26,15 @@ const ButtonGroups = React.lazy(() => import('./views/buttons/button-groups/Butt
 const Dropdowns = React.lazy(() => import('./views/buttons/dropdowns/Dropdowns'))
 
 //Forms
-const ClassPackage = React.lazy(() => import('./views/forms/checks-radios/ClassPackage'))
+const RegisterPackagesView = React.lazy(() =>
+  import('./views/forms/register-class-packages/RegisterPackagesView'),
+)
 const FloatingLabels = React.lazy(() => import('./views/forms/floating-labels/FloatingLabels'))
-const FormControl = React.lazy(() => import('./views/forms/registry/FormControl'))
+const Registry = React.lazy(() => import('./views/forms/registry/Registry'))
 const InputGroup = React.lazy(() => import('./views/forms/input-group/InputGroup'))
 const Layout = React.lazy(() => import('./views/forms/layout/Layout'))
 const Range = React.lazy(() => import('./views/forms/range/Range'))
-const Select = React.lazy(() => import('./views/forms/select/Select'))
+const SkillRegistry = React.lazy(() => import('./views/forms/registry-skills/SkillRegistry'))
 const Validation = React.lazy(() => import('./views/forms/validation/Validation'))
 
 const Charts = React.lazy(() => import('./views/charts/Charts'))
@@ -76,10 +78,14 @@ const routes = [
   { path: '/buttons/dropdowns', name: 'Dropdowns', component: Dropdowns },
   { path: '/buttons/button-groups', name: 'Button Groups', component: ButtonGroups },
   { path: '/charts', name: 'Charts', component: Charts },
-  { path: '/forms', name: 'Forms', component: FormControl, exact: true },
-  { path: '/forms/registry', name: 'Form Control', component: FormControl },
-  { path: '/forms/select', name: 'Select', component: Select },
-  { path: '/forms/checks-radios', name: 'Checks & Radios', component: ClassPackage },
+  { path: '/forms', name: 'Forms', component: Registry, exact: true },
+  { path: '/forms/registry', name: 'Registry', component: Registry },
+  { path: '/forms/skills-registry', name: 'Select', component: SkillRegistry },
+  {
+    path: '/forms/register-class-packages',
+    name: 'Register class packages',
+    component: RegisterPackagesView,
+  },
   { path: '/forms/range', name: 'Range', component: Range },
   { path: '/forms/input-group', name: 'Input Group', component: InputGroup },
   { path: '/forms/floating-labels', name: 'Floating Labels', component: FloatingLabels },

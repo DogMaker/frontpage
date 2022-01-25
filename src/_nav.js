@@ -28,12 +28,12 @@ const _nav = [
       {
         component: CNavItem,
         name: portuguese.nav.skillsRegistry,
-        to: '/forms/select',
+        to: '/forms/skills-registry',
       },
       {
         component: CNavItem,
         name: portuguese.nav.packageRegistry,
-        to: '/forms/checks-radios',
+        to: '/forms/register-class-packages',
       },
       {
         component: CNavItem,
