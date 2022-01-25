@@ -23,7 +23,7 @@ const _nav = [
       {
         component: CNavItem,
         name: portuguese.nav.personalRegistry,
-        to: '/forms/form-control',
+        to: '/forms/registry',
       },
       {
         component: CNavItem,
