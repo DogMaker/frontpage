@@ -4,22 +4,22 @@ const stub = {
       actionName: 'Aprender conceitos Rest',
       actionContext: [
         {
-          id: 'act-001',
+          id: 'act1-001',
           description: 'Ler fundamentos Http',
-          completed: false,
+          completed: true,
         },
         {
-          id: 'act-002',
+          id: 'act1-002',
           description: 'Ler fundamentos status code',
           completed: false,
         },
         {
-          id: 'act-003',
+          id: 'act1-003',
           description: 'Ler sobre idempotency',
-          completed: true,
+          completed: false,
         },
         {
-          id: 'act-004',
+          id: 'act1-004',
           description: 'Entender sobre mircoserviços',
           completed: false,
         },
@@ -29,12 +29,12 @@ const stub = {
       actionName: 'Aprender sobre SQL',
       actionContext: [
         {
-          id: 'act-003',
+          id: 'act2-003',
           description: 'Principais bancos de dados',
-          completed: true,
+          completed: false,
         },
         {
-          id: 'act-004',
+          id: 'act2-004',
           description: 'Diferenças entre SQL x NoSQL',
           completed: false,
         },

@@ -1,4 +1,4 @@
-import { React, useState } from 'react'
+import { React, useState, useEffect } from 'react'
 import { cilCheckCircle, cilXCircle } from '@coreui/icons'
 
 import {
@@ -35,10 +35,8 @@ export const getIconsView = (iconset) => {
 }
 
 const CoreUIIcons = () => {
-  const [status, setStatus] = useState({
-    icon: cilXCircle,
-    color: 'dark',
-  })
+  const [status, setStatus] = useState(act)
+  const [mid, setMid] = useState(true)
 
   function getColor(status) {
     if (status) {
@@ -47,6 +45,7 @@ const CoreUIIcons = () => {
       return 'dark'
     }
   }
+
   function getIcon(status) {
     if (status) {
       return cilCheckCircle
@@ -54,35 +53,47 @@ const CoreUIIcons = () => {
       return cilXCircle
     }
   }
+
+  function keepStatus(parentIndex, index) {
+    status.actions[parentIndex].actionContext[index].completed =
+      !status.actions[parentIndex].actionContext[index].completed
+    setStatus(act)
+    setMid(!mid)
+  }
+
   return (
-    <>
-      {act.actions.map((item, index) => (
-        <CCard className="mb-4" v-for="item in tableItems" key={index}>
+    <div id={mid}>
+      {status.actions.map((item, actParent) => (
+        <CCard className="mb-4" v-for="item in tableItems" key={actParent}>
           <CCardHeader>
             <strong>{item.actionName}</strong>
           </CCardHeader>
           <CCardBody>
             {item.actionContext.map((item, index) => (
-              <CAlert
-                color={getColor(item.completed)}
-                variant="solid"
-                className="d-flex align-items-center"
-                v-for="item in tableItems"
-                key={index}
-              >
-                <CIcon
-                  icon={getIcon(item.completed)}
-                  className="flex-shrink-0 me-2"
-                  width={24}
-                  height={24}
-                />
-                <div>{item.description}</div>
-              </CAlert>
+              <div v-for="item in tableItems" key={index}>
+                <CAlert
+                  id={item.id}
+                  color={getColor(item.completed)}
+                  variant="solid"
+                  className="d-flex align-items-center"
+                  onClick={() => {
+                    keepStatus(actParent, index)
+                  }}
+                >
+                  <CIcon
+                    icon={getIcon(item.completed)}
+                    className="flex-shrink-0 me-2"
+                    width={24}
+                    height={24}
+                  />
+                  <div>{item.description}</div>
+                </CAlert>
+              </div>
             ))}
           </CCardBody>
         </CCard>
       ))}
-    </>
+    </div>
   )
 }
 
