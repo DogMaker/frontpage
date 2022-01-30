@@ -38,7 +38,7 @@ const _nav = [
       {
         component: CNavItem,
         name: portuguese.nav.classSchedule,
-        to: '/buttons/dropdowns',
+        to: '/forms/register-class-calendar',
       },
     ],
   },
@@ -68,7 +68,7 @@ const _nav = [
       {
         component: CNavItem,
         name: portuguese.nav.tasks,
-        to: '/icons/brands',
+        to: '/forms/following-up',
       },
     ],
   },
