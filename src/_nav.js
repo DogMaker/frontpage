@@ -46,19 +46,19 @@ const _nav = [
     component: CNavItem,
     name: portuguese.nav.payments,
     icon: <CIcon icon={cilCreditCard} customClassName="nav-icon" />,
-    to: '/forms/floating-labels',
+    to: '/forms/payments',
   },
   {
     component: CNavItem,
     name: portuguese.nav.completeCalendar,
     icon: <CIcon icon={cilCalendar} customClassName="nav-icon" />,
-    to: '/forms/range',
+    to: '/forms/calendar',
   },
   {
     component: CNavItem,
     name: portuguese.nav.searchMentor,
     icon: <CIcon icon={cilSchool} customClassName="nav-icon" />,
-    to: '/forms/validation',
+    to: '/forms/search-mentors',
   },
   {
     component: CNavGroup,
