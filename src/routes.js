@@ -12,7 +12,7 @@ const RegisterPackagesView = React.lazy(() =>
 const FloatingLabels = React.lazy(() => import('./views/forms/payments/FloatingLabels'))
 const Registry = React.lazy(() => import('./views/forms/registry/Registry'))
 const InputGroup = React.lazy(() => import('./views/forms/input-group/InputGroup'))
-const Layout = React.lazy(() => import('./views/forms/layout/Layout'))
+const Layout = React.lazy(() => import('./views/forms/mentor-description/Layout'))
 const Range = React.lazy(() => import('./views/forms/calendar/Range'))
 const SkillRegistry = React.lazy(() => import('./views/forms/registry-skills/SkillRegistry'))
 const Validation = React.lazy(() => import('./views/forms/search-mentors/Validation'))
@@ -42,7 +42,7 @@ const routes = [
   { path: '/forms/calendar', name: 'Complete calendar', component: Range },
   { path: '/forms/input-group', name: 'Input Group', component: InputGroup },
   { path: '/forms/payments', name: 'Payments', component: FloatingLabels },
-  { path: '/forms/layout', name: 'Layout', component: Layout },
+  { path: '/forms/mentor-description', name: 'Mentor Description', component: Layout },
   { path: '/forms/search-mentors', name: 'Seach Mentors', component: Validation },
   { path: '/icons', exact: true, name: 'Icons', component: CoreUIIcons },
   { path: '/icons/coreui-icons', name: 'CoreUI Icons', component: CoreUIIcons },
