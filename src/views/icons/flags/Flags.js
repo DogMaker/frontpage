@@ -66,7 +66,7 @@ const Flags = () => {
                     <p>Efetue aqui o cadastro.</p>
                     <Link to="/register">
                       <CButton color="primary" className="mt-3" active tabIndex={-1}>
-                        Register Now!
+                        Cadastre-se
                       </CButton>
                     </Link>
                   </div>
